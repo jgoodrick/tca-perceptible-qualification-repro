@@ -40,5 +40,5 @@ struct AppRootView: View {
 
 #Preview { Preview }
 private var Preview: some View {
-    AppRootView()
+    AppRootView(store: .init(initialState: .init(), reducer: { AppRoot() }))
 }
